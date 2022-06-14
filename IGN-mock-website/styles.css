@@ -1,0 +1,211 @@
+@font-face{font-family:'ars-maquette-web';
+    src:url('https://apps.ign.com/video-player/fonts/ars400normal.woff') format('woff');font-style:normal;font-weight:400;font-display:swap;}
+   
+@font-face{font-family:'ars-maquette-web';
+    src:url('https://apps.ign.com/video-player/fonts/ars700normal.woff') format('woff');font-style:normal;font-weight:700;font-display:swap;}
+
+@font-face{font-family:'ars-maquette-web';
+    src:url('https://apps.ign.com/video-player/fonts/ars900normal.woff') format('woff');font-style:normal;font-weight:900;font-display:swap;}
+
+body{
+    font-family: 'ars-maquette-web', sans-serif; 
+    text-rendering: optimizeLegibility;
+    margin:0;
+    padding-left:0;
+}
+
+.header{
+    width:100%;
+}
+
+.logo-container{
+    height:50%;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height:90px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+    box-sizing: content-box;
+    height:100%;
+    margin-right: auto;
+}
+
+.ign_icon{
+    background-size:100%;
+    overflow:hidden;
+    height:100%;
+}
+
+.date{
+    display:flex;
+    align-items: center;
+    height:100%;
+    font-weight: 900;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin:0 20px;
+    text-size-adjust: 100%;
+}
+
+.nav-links-container{
+    width:450px;
+    box-sizing: border-box;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-size: .9em;
+    cursor: pointer;
+}
+
+.nav-links > li {
+    padding-right: 20px;
+}
+
+.signin-button{
+    padding-left: 25px;
+}
+
+.signin{
+    border-radius: 8px;
+    border: 1px solid #191C24;
+    background-color: #191C24;
+    height:35px;
+    font-weight: 700;
+    color:white;
+    width:72px;
+    padding:0px;
+    text-align: center;
+    text-indent: 0px;
+}
+
+.more{
+    display:flex;
+}
+
+.arrow{
+    display:flex;
+    padding: .3em .3em;
+}
+
+.article-nav{
+    display:flex;
+    font-size: 13px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F6F8;
+    height: 50px;
+    box-shadow: 0 1px 2px 1px lightgray;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.article-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-align: center;
+    height:50%;
+    width:16%;
+    padding:0 20px;
+    color: rgb(77, 77, 77);
+    cursor: pointer;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.article-item:hover{
+    color: black;
+    transition: .2s;
+}
+
+.article-main{
+    display:grid;
+    padding: 20px 0 0 0;
+    grid-template-columns: minmax(50px,auto) repeat(6,minmax(18px,228px)) minmax( 50px, auto ) 
+}
+
+.article-main-video{
+    grid-column: 2/ 6;
+    grid-row: 1;
+    margin: 0 20px 0 20px;
+}
+
+.article-main-side{
+    grid-column: 6/8;
+    grid-row:auto;
+}
+
+.video-wrapper{
+    display: flex;
+    width:100%;
+    font-size: 13px;
+    margin:15px 0;
+}
+
+.main-player{
+    margin-bottom: 200px;
+}
+
+.content-wrapper{
+    width:100%;
+    display:flex;
+}
+
+video{
+    width:100%;
+    border-radius: 5px;
+}
+
+.article-main-video .content-wrapper .content-title{
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.article-main-side  .video-wrapper{
+    padding-bottom: 15px;
+}
+
+.article-main-side .video-wrapper video{
+    width:40%;
+    margin-right:15px;
+}
+
+.controls {
+    visibility: hidden;
+}
+
+.controls .progress{
+    cursor:pointer;
+    width:50%;
+}
+
+#button-container{
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+
+#load-button{
+    background-color:#bf1313;
+    width:100%;
+    border-radius: 3px;
+    color: white;
+    height:35px;
+    border: none;
+    box-shadow: none;
+}
